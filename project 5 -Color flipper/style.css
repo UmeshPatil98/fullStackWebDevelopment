@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    /* width: 100px; */
+    background-color:  hsl(210, 36%, 96%);
+    color:  hsl(209, 61%, 16%);
+    line-height: 1.5;
+    font-size: 0.87rem;
+
+}
+ul{
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+}
+h2{
+    font-size: 32px;
+}
+h4{
+    font-size: 16px;
+}
+
+nav{
+    background-color: #fff;
+    height: 52px;
+    display: grid;
+    align-items: center;
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.nav_container{
+    width: 90vw;
+    max-width: 1770px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_container h4{
+    margin-bottom: 0;
+    color:  hsl(205, 78%, 60%);
+}
+.nav-links {
+    display: flex;
+  }
+  nav a{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 17px;
+    color: hsl(205, 86%, 17%);
+    letter-spacing: 0.1rem;
+    margin-right: 1rem;    
+  }
+  nav a:hover{
+    color: hsl(205, 78%, 60%);
+  }
+
+  main{
+    min-height: 100vh;
+  display:grid;
+  place-items: center;
+  }
+ .container {
+    text-align: center;
+    
+}
+.container h2{
+    background: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2.5rem;
+}
+.color{
+    color: hsl(205, 63%, 48%);
+}
+.btn-hero {
+   
+    text-transform: uppercase;
+    background: transparent;
+    color: black;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    font-weight: 700;
+    transition: linear all 0.3s;
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+}
+.btn-hero :hover{
+    color: white;
+    background: black;
+}
