@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@100&family=Red+Rose:wght@300;700&family=Roboto:ital,wght@0,700;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+   
+}
+ h1{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5);
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 5px 0px;
+    padding: 10px;
+    
+
+}
+button{
+    
+    margin: 2px 5px;
+    padding: 3px;
+    font-weight: bold;
+   
+    
+}
+
+#Value {
+    font-size: 25px;
+    padding: 5px 15px;
+    border: 1px solid black
+}
