@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="loginForm">
+        <label for="email">Email:</label>
+        <input type="text" id="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+      <p id="message"></p>
+      
+</body>
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+  
+  // Get the email and password values
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+  
+  // Validate email
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    showMessage('Invalid email or password!', 'red');
+    return;
+  }
+  
+  // Validate password
+  if (password.length < 8) {
+    showMessage('Invalid email or password!', 'red');
+    return;
+  }
+  
+  // If both email and password are valid
+  showMessage('Valid email and password!', 'green');
+});
+
+function showMessage(message, color) {
+  var messageElement = document.getElementById('message');
+  messageElement.textContent = message;
+  messageElement.style.color = color;
+}
+
+</script>
+</html>
